@@ -26,7 +26,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex">
-          <a href="#" data-aos="fade-down" data-aos-delay="1000">
+          <a href="/" data-aos="fade-down" data-aos-delay="1000">
             <img src={logo} alt="Tivi logo" className="w-20" />
           </a>
           {/*Initially hidden - visible on desktop mode*/}
