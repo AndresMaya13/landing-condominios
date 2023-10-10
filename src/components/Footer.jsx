@@ -29,7 +29,7 @@ const Footer = () => {
                 const { href, icon } = item;
                 return (
                   <li key={index}>
-                    <a href={href}>
+                    <a href={href} target="blank">
                       <img
                         src={icon}
                         alt="icono de contacto"

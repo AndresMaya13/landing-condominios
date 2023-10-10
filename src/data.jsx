@@ -40,18 +40,18 @@ export const nav = [
 ];
 
 export const hero = {
-  title: "Disfruta de más tiempo libre",
-  subtitle: "Dile adiós a las tareas difíciles y repetitivas en tu condominio.",
+  title: "Somos Condominios",
+  subtitle: "Un software de administración de propiedad raíz, enfocado en la automatización de procesos y en la digitalicación de los pagos. Permitimos una gestión y seguimiento de las visitas, paquetes y comunicados desde portería hacia todos los inquilinos. Para administradores, guardas de seguridad e inquilinos",
   btnFirstModule: "Ir a funcionalidades",
   image: heroImage,
 };
 
 export const sections = {
   sectionOne: {
-    pretitle: "Innovación y crecimiento",
-    title: "Condominios para ti",
+    // pretitle: "Beneficios y ventajas",
+    title: "Beneficios y ventajas",
     subtitle:
-      "Somos una empresa dedicada a implementar soluciones de software que minimicen el esfuerzo en las tareas tediosas y recurrentes.",
+      "Los administradores podrán usar menos horas de su tiempo gestionando sus conjuntos.\n Los guardas dejarán de usar sus cuadernos para registrar las novedades de portería. Y los inquilinos tendrán a la mano la gestión de sus pagos, visitas, paquetes y muchas funcionalidades que les permitirán tener una mejor experiencia en su conjunto. Se tendrá trazabilidad de todo lo que sucede en el conjunto, y mucho más.",
     btnLink: "Saber más",
     image: sectionOneImage,
   },
@@ -109,6 +109,8 @@ export const pricing = {
         { name: "Almacenamiento financiero" },
         { name: "Seguimiento a bitácora" },
         { name: "Acceso y control de invitados" },
+        { name: "Administración de 1 conjunto" },
+
       ],
       price: "$9.99",
       btnText: "Consultar precio",
@@ -120,6 +122,8 @@ export const pricing = {
         { name: "Almacenamiento financiero" },
         { name: "Seguimiento a bitácora" },
         { name: "Acceso y control de invitados" },
+        { name: "Pagos digitales" },
+        { name: "Administración de hasta 3 conjuntos" },
       ],
       price: "$19.99",
       btnText: "Consultar precio",
@@ -131,6 +135,11 @@ export const pricing = {
         { name: "Almacenamiento financiero" },
         { name: "Seguimiento a bitácora" },
         { name: "Acceso y control de invitados" },
+        { name: "Pagos digitales" },
+        { name: "Número de conjuntos ilimitados" },
+        { name: "Módulo de asambleas" },
+        { name: "Módulo de votaciones" },
+        { name: "Rondas de guardas" },
       ],
       price: "$29.99",
       btnText: "Consultar precio",
@@ -140,12 +149,11 @@ export const pricing = {
 };
 
 export const footer = {
-  title: "A la distancia de un clic",
-  subtitle: "Puedes encontrarnos a través de nuestras redes sociales:",
+  title: "Contáctanos y prueba un demo",
+  subtitle: "Sin importar si eres un guarda, un inquilino o un administrador, Puedes contactarnos y nosotros nos encargaremos de llegar hasta tu conjunto para que puedas hacer parte de nuestra comunidad. Déjanos un mensaje por cualquiera de nuestras redes sociales y te contactaremos lo más pronto posible.",
   image: footerContactImage,
   social: [
-    { icon: facebook, href: "/" },
-    { icon: instagram, href: "/" },
-    { icon: whatsapp, href: "/" },
+    { icon: instagram, href: "https://www.instagram.com/condominios_emp/" },
+    { icon: whatsapp, href: "https://wa.me/573136962979?text=Hola estoy interesado en saber más de condominios" },
   ],
 };

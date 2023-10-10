@@ -33,7 +33,7 @@ const Pricing = () => {
                   onClick={() => setIndex(cardIndex)}
                   className={`${
                     cardIndex === index ? "bg-white shadow-2xl" : "shadow"
-                  } w-[350px] h-[350px] rounded-[12px] p-[40px] cursor-pointer transition-all`}
+                  } w-[350px] h-[580px] rounded-[12px] p-[40px] cursor-pointer transition-all`}
                 >
                   <div className="mb-8">
                     <BsCashCoin className="text-secondary text-2xl" />

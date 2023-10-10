@@ -11,8 +11,13 @@ import SectionOne from "./components/about-us/SectionOne";
 import Functionalities from "./components/Functionalities";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
+import { useEffect } from "react";
 
 const App = () => {
+
+  useEffect(() => {
+    document.title = 'Condominios';
+  }, []);
   //initialize aos
   Aos.init({
     duration: 800,
