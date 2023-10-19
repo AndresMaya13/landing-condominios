@@ -11,6 +11,7 @@ import SectionOne from "./components/about-us/SectionOne";
 import Functionalities from "./components/Functionalities";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
+import ContactForm from "./components/ContactForm";
 import { useEffect } from "react";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
       <Functionalities />
       <Pricing />
       <Footer />
+      <ContactForm />
       {/* <div className="h-[4000px]"></div> */}
     </div>
   );
