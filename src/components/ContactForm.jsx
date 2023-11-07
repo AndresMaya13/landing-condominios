@@ -2,10 +2,11 @@ import React, { useState } from "react";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
-    nombre: "",
-    celular: "",
-    tipoUsuario: "administrador",
-    dondeNosViste: "",
+    name: "",
+    cellphone: "",
+    email: "",
+    userType: "administrador",
+    origin: "",
   });
 
   const handleChange = (e) => {
@@ -17,7 +18,21 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    let infoData = `Hola, mi nombre es ${formData.name}
+    Los vi por: ${formData.origin}
+    Soy ${formData.userType}
+    
+    Mis datos de contacto son:
+    
+    celular: ${formData.cellphone}
+    email: ${formData.email}
+    
+    Estoy interesado en conocer Condominios`;
+
+    let url = `https://wa.me/573185804092?text=${encodeURIComponent(infoData)}`
+
+    window.open(url, "_blank", "noreferrer");
   };
 
   return (
@@ -29,16 +44,16 @@ function ContactForm() {
       >
         <div className="mb-4">
           <label
-            htmlFor="nombre"
+            htmlFor="name"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
             Nombre
           </label>
           <input
             type="text"
-            id="nombre"
-            name="nombre"
-            value={formData.nombre}
+            id="name"
+            name="name"
+            value={formData.name}
             onChange={handleChange}
             className="border rounded w-full py-2 px-3"
             required
@@ -46,16 +61,16 @@ function ContactForm() {
         </div>
         <div className="mb-4">
           <label
-            htmlFor="celular"
+            htmlFor="cellphone"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
             Celular
           </label>
           <input
             type="text"
-            id="celular"
-            name="celular"
-            value={formData.celular}
+            id="cellphone"
+            name="cellphone"
+            value={formData.cellphone}
             onChange={handleChange}
             className="border rounded w-full py-2 px-3"
             required
@@ -63,15 +78,32 @@ function ContactForm() {
         </div>
         <div className="mb-4">
           <label
-            htmlFor="tipoUsuario"
+            htmlFor="email"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            Correo
+          </label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className="border rounded w-full py-2 px-3"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            htmlFor="userType"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
             Tipo de Usuario
           </label>
           <select
-            id="tipoUsuario"
-            name="tipoUsuario"
-            value={formData.tipoUsuario}
+            id="userType"
+            name="userType"
+            value={formData.userType}
             onChange={handleChange}
             className="border rounded w-full py-2 px-3"
             required
@@ -84,16 +116,16 @@ function ContactForm() {
         </div>
         <div className="mb-4">
           <label
-            htmlFor="dondeNosViste"
+            htmlFor="origin"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
             ¿Por dónde nos viste?
           </label>
           <input
             type="text"
-            id="dondeNosViste"
-            name="dondeNosViste"
-            value={formData.dondeNosViste}
+            id="origin"
+            name="origin"
+            value={formData.origin}
             onChange={handleChange}
             className="border rounded w-full py-2 px-3"
             required
